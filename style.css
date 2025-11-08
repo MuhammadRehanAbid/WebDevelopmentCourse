@@ -2,3 +2,9 @@ body{
     background-color: rgb(118, 230, 204);
     color : black;
 }
+p{
+    background-color: rgb(51, 193, 26) ;
+}
+a{
+    background-color: rgb(151, 84, 206);
+}
