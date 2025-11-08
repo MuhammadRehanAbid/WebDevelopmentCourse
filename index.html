@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehan Bookmarks</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>BOOKMARKS</h1>
     <h2>Primary Bookmarks</h2>
@@ -36,6 +38,37 @@
         <li><a target="_blank" href="https://Medium.com">Open Medium</a></li>
         <li><a target="_blank" href="https://Quora.com">Open Quora</a></li>
     </ul>
+    <h2>Form</h2>
+    <form action="Post">
+        <div> <label for="Username">Enter Your Username</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter Username">
+        </div>
+        <div> <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" required id="Accept" name="Accept" value="Yes">
+            <label for="Accept">Accept</label>
+        </div>
+        <div>
+            <label for="Remarks">Remarks:</label><br>
+            <textarea name="Remarks" id="Remarks" rows="5" cols="50">
+Enter your remarks here...
+            </textarea>
+        </div>
+        <div>
+            <label for="Age">Select Your Age</label>
+            <select name="Age" id="Age">
+                <option value="18-25">18-25</option> 
+                <option value="26-36">26-36</option> 
+                <option value="35-45">35-45</option> 
+                <option value="45-60">45-60</option> 
+            </select>
+        </div>
+    </form>
 
 </body>
+
 </html>
