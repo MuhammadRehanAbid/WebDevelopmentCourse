@@ -14,3 +14,12 @@ div{
 span{
     background-color: rgb(230, 30, 150);
 }
+.Red{
+    color : red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-green{
+    background-color: green;
+}
