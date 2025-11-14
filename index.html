@@ -5,165 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehan Bookmarks</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        h4 {
+        /* Element selector  */
+        div {
             color: blue;
-            background-color: lightgray;
+        }
+
+        /* Class Selector  */
+        .Red {
+            color: red;
+        }
+
+        /* Id Selector  */
+        #Yellow{
+            color: yellow;
+        }
+        /* child selectors  */
+        div > p {
+            color: green;
+        }
+        /* Descendent Selector  */
+        div p {
+            color: green;
+        }
+        /* univeral selector  */
+        * {
+            margin:0;
+            padding: 0;
+        }
+        /* pseudo selectors  */
+        a:hover {
+            background-color: orange;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:link {
+            color: brown;
+        }
+        a:active {
+            background-color: black;
         }
     </style>
 </head>
-
 <body>
-    <h1>BOOKMARKS</h1>
-    <h2>Primary Bookmarks</h2>
-    <a target="_blank" href="https://Facebook.com">Open Facebook</a>
-    <br>
-    <a target="_blank" href="https://Youtube.com">Open Yputube</a>
-    <br>
-    <a target="_blank" href="https://Instagram.com">Open Instagram</a>
-    <h2>Secondary Bookmarks</h2>
-    <a target="_blank" href="https://Tiktok.com">Open Tiktok</a>
-    <br>
-    <a target="_blank" href="https://Github.com">Open Github</a>
-    <table>
-        <tr>
-            <th>Website</th>
-            <th>Link</th>
-        </tr>
-        <tr>
-            <td>LinkedIn</td>
-            <td><a target="_blank" href="https://LinkedIn.com">Open LinkedIn</a></td>
-        </tr>
-    </table>
-    <ol type="">
-        <li><a target="_blank" href="https://Reddit.com">Open Reddit</a></li>
-        <li><a target="_blank" href="https://StackOverflow.com">Open Stack Overflow</a></li>
-    </ol>
-    <ul>
-        <li><a target="_blank" href="https://Medium.com">Open Medium</a></li>
-        <li><a target="_blank" href="https://Quora.com">Open Quora</a></li>
-    </ul>
-    <h2>Form</h2>
-    <form action="Post">
-        <div> <label for="Username">Enter Your Username</label>
-            <input type="text" id="Username" name="Username" placeholder="Enter Username">
-        </div>
-        <div> <input type="radio" id="Male" name="Gender" value="Male">
-            <label for="Male">Male</label>
-            <input type="radio" id="Female" name="Gender" value="Female">
-            <label for="Female">Female</label>
-        </div>
-        <div>
-            <input type="checkbox" required id="Accept" name="Accept" value="Yes">
-            <label for="Accept">Accept</label>
-        </div>
-        <div>
-            <label for="Remarks">Remarks:</label><br>
-            <textarea name="Remarks" id="Remarks" rows="5" cols="50">
-Enter your remarks here...
-            </textarea>
-        </div>
-        <div>
-            <label for="Age">Select Your Age</label>
-            <select name="Age" id="Age">
-                <option value="18-25">18-25</option>
-                <option value="26-36">26-36</option>
-                <option value="35-45">35-45</option>
-                <option value="45-60">45-60</option>
-            </select>
-        </div>
-    </form>
-    <h2>Inline and Block Elements</h2>
-    <p>This is Blcok element</p>
-    <a href="https://google.com">Inline Element</a>
-    <div>Div is a Block Element</div>
-    <span>Span is Inline</span>
-    <a href="">This anchor is coming right after span means that span is inline</a>
-
-    <h2>Quiz from Harry Without Using br Tag</h2>
-    <form action="Data">
-        <div> <label for="Name">Enter Your Name </label>
-            <input type="text" id="Name" name="Name" placeholder="Enter Name">
-        </div>
-        <div> <label for="City">Enter Your City Name</label>
-            <input type="text" id="City" name="City" placeholder="Enter City">
-        </div>
-        <div> <label for="Pincode">Enter Your Pincode</label>
-            <input type="password" id="Pincode" name="Pincode" placeholder="Enter Pincode">
-        </div>
-    </form>
-    <h2>Id and Classes</h2>
-    <div id="123" class="Red bg-yellow">Div ID 123 with red and bg-yellow Class</div>
-    <div id="321" class="Red bg-green">Div ID 321 with red and bg-green Class</div>
-    <span class="bg-green">This is a Span with bg-green class</span>
-
-    <h2>Adding Video Audio and Picture</h2>
-    <dev>
-        <video src="Video.mp4" height="300" controls autoplay muted>Autoplay Muted</video>
-    </dev>
-    <dev>
-        <video src="Video.mp4" height="300" controls loop>Loop</video>
-    </dev>
-    <dev>
-        <video src="Video.mp4" height="300" controls poster="picture.png">Simple with poster</video>
-    </dev>
-    <dev>
-        <audio src="Audio.mp3" controls autoplay>Winner</audio>
-    </dev>
-    <svg> width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-    </svg>
-    <iframe src="https://www.codewithharry.com/" height="500" width="900"></iframe>
-
-    <h2>Semantic Tage </h2>
-    <header>
-        This is The Header Section
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div>This is Colored Becuase of its Element
+        <p>This is Colred Becuase its a Child</p>
         <section>
-            This is Section
+            <p>This is Colored Because its a Descendent</p>
         </section>
-        <article>
-            This is Article
-        </article>
-        <aside>
-            This is Aside Section
-        </aside>
-    </main>
-    <footer>
-        This is The Footer Section
-    </footer>
-    <h1>Video 13</h1>
-    <h2>Adding Other neccesary things in Html</h2>
-    <blockquote>
-        This is a Blockquote element. It is used to indicate the quotation of a large section of text from another
-        source.
-    </blockquote>
-    <h1>Video 15 -3 Ways to add Css to Html</h1>
-    <div>
-        <ol>
-            <li>
-                <h4 style="color: yellow;background-color: blueviolet;">Inline Css</h4>
-            </li>
-            <li>
-                <h4>Internal Css</h4><!--  Done using style tag inside head tag , GO in the head -->
-            </li>
-            <li>
-                <h4>
-                    External Css <!-- Done using external file with .css extension and link tag inside head tag , GO in
-                    the head -->
-                </h4>
-            </li>
-        </ol>
     </div>
+    <div class="Red">This is Colored Becuase of its Class</div>
+    <div id="Yellow">This is Colored Becuase of its Id</div>
+    <a href="https://www.rehanabid.com">Visit Our Website</a>
 </body>
-
 </html>
