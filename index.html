@@ -6,57 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehan Bookmarks</title>
     <style>
-        /* Element selector  */
-        div {
-            color: blue;
+        .box {
+            background-color: aquamarine;
         }
 
-        /* Class Selector  */
-        .Red {
-            color: red;
-        }
-
-        /* Id Selector  */
-        #Yellow{
-            color: yellow;
-        }
-        /* child selectors  */
-        div > p {
-            color: green;
-        }
-        /* Descendent Selector  */
-        div p {
-            color: green;
-        }
-        /* univeral selector  */
         * {
-            margin:0;
             padding: 0;
+            margin: 0;
+            border: 0;
         }
-        /* pseudo selectors  */
-        a:hover {
-            background-color: orange;
+
+        .box1 {
+            padding: 10px;
+            /*Includes Background  */
+            border: 2px solid black;
+            margin: 20px;
+            /*Doesn't Includes Background  */
+            height: 100px;
+            box-sizing: border-box;
+            /*Includes Padding and Border in height and width */
         }
-        a:visited {
-            color: purple;
-        }
-        a:link {
-            color: brown;
-        }
-        a:active {
-            background-color: black;
+
+        .box2 {
+            padding: 10px;
+            /*Includes Background  */
+            border: 2px solid black;
+            margin: 30px;
+            /*Doesn't Includes Background , and Here we see Margin Collapse , The Greater one Gets the Say */
+            height: 100px;
+            box-sizing: content-box;
+            /*Default Value Doesn't Includes Padding and Border in height and width */
         }
     </style>
 </head>
+
 <body>
-    <div>This is Colored Becuase of its Element
-        <p>This is Colred Becuase its a Child</p>
-        <section>
-            <p>This is Colored Because its a Descendent</p>
-        </section>
-    </div>
-    <div class="Red">This is Colored Becuase of its Class</div>
-    <div id="Yellow">This is Colored Becuase of its Id</div>
-    <a href="https://www.rehanabid.com">Visit Our Website</a>
+    <div class="box box1">This is Box 1</div>
+    <div class="box2 box">This is Box 2</div>
 </body>
+
 </html>
