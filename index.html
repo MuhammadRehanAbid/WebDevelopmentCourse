@@ -6,43 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rehan Bookmarks</title>
     <style>
-        .box {
-            background-color: aquamarine;
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 68px;
+            color: #337fcb;
         }
-
-        * {
-            padding: 0;
-            margin: 0;
-            border: 0;
+        h2 {
+            text-align: center;
+            font-family: 'Bangers', cursive;
+            font-size: 50px;
+            color: #7514cf;
         }
-
-        .box1 {
-            padding: 10px;
-            /*Includes Background  */
-            border: 2px solid black;
-            margin: 20px;
-            /*Doesn't Includes Background  */
-            height: 100px;
-            box-sizing: border-box;
-            /*Includes Padding and Border in height and width */
-        }
-
-        .box2 {
-            padding: 10px;
-            /*Includes Background  */
-            border: 2px solid black;
-            margin: 30px;
-            /*Doesn't Includes Background , and Here we see Margin Collapse , The Greater one Gets the Say */
-            height: 100px;
-            box-sizing: content-box;
-            /*Default Value Doesn't Includes Padding and Border in height and width */
+        p {
+            font-family: 'Georgia', serif;
+            font-size: 25px;
+            font-style: oblique;
+            color: #ad0f0f;
+            text-decoration: dotted underline;
         }
     </style>
 </head>
 
 <body>
-    <div class="box box1">This is Box 1.</div>
-    <div class="box2 box">This is Box 2.</div>
+    <h1>Fonts and Text Properties , Colors</h1>
+    <h2>Added Font using google fonts</h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores voluptatem molestias delectus rerum doloremque, aut quasi distinctio amet voluptates.
+        </p>
+    </div>
 </body>
 
 </html>
