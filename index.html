@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cascade Algorithm</title>
     <style>
-        * {
-            color: pink;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        div{
-            color: coral;
+        .Box
+        {
+            border: 2px solid black;
+            height : 30vh;
         }
-        .redclr{
-            color: red;
+        .Yo
+        {
+            background-color: yellow;
+            width: 80vw;
+            margin: auto;
         }
-        #blueclr{
-            color: blue;
-        }
-
+        
     </style>
 </head>
 <body>
-    <h1>
-        Checking Cascade Algorithms
-        <div id="blueclr" class="redclr">
-            Cascade Algorithm will be applied on this heading
-            the most specific rule will take precedence.
-            in this case the id selector has the highest specificity,
-            so the text color will be blue.
-        </div>
-    </h1>
+    <div class="Box">
+        This is a box.
+    </div>
+    <div class="Yo"> 
+    div this is another box.
+    </div>
 </body>
 </html>
