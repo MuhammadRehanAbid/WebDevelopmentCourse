@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cascade Algorithm</title>
+    <title>Changing Display Property</title>
     <style>
-        *{
-            margin: 0;
+        * {
             padding: 0;
+            margin: 0;
         }
-        .Box
-        {
-            border: 2px solid black;
-            height : 30vh;
+
+        .box {
+            border: 10px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 49px;
+            /* display: flex; */
+            justify-content: center;
         }
-        .Yo
-        {
-            background-color: yellow;
-            width: 80vw;
-            margin: auto;
+
+        .yo {
+            color: red;
         }
-        
+
+        .box1 {
+            /* display:none; */
+            /* visibility: hidden; */
+        }
     </style>
 </head>
+
 <body>
-    <div class="Box">
-        This is a box.
+    <div class="box">
+        I am a Box
     </div>
-    <div class="Yo"> 
-    div this is another box.
+    <div class="box box1">
+        This is another box
     </div>
+    <span class="yo">
+        This is a
+    </span>
+    <span>
+        Span
+    </span>
 </body>
+
 </html>
