@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changing Display Property</title>
+    <title>Shadows and Outlines</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
+        .box{
+            border: 2px solid #000;
+            padding: 25px;
+            box-shadow: 3px 12px 13px 3px rgba(0,0,0,0.3);
         }
-
-        .box {
-            border: 10px solid blue;
-            display: inline-block;
-            padding: 45px;
-            margin: 49px;
-            /* display: flex; */
-            justify-content: center;
-        }
-
-        .yo {
-            color: red;
-        }
-
-        .box1 {
-            /* display:none; */
-            /* visibility: hidden; */
+        .text-shadow{
+            text-shadow: 2px 2px 4px rgb(153, 0, 255);
+            outline: 3px dotted rgb(255, 0, 255);
         }
     </style>
 </head>
-
 <body>
     <div class="box">
-        I am a Box
+        This is a box with shadow and outline.
     </div>
-    <div class="box box1">
-        This is another box
-    </div>
-    <span class="yo">
-        This is a
-    </span>
-    <span>
-        Span
-    </span>
+    <p class="text-shadow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore at error laudantium a incidunt quasi est ipsum accusantium atque minus optio enim eius illo maxime, quia quibusdam molestias porro ut vel modi architecto nihil cumque. Nihil, soluta.
+    </p>
 </body>
-
 </html>
