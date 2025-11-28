@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadows and Outlines</title>
+    <title>Styling CSS lists</title>
     <style>
-        .box{
-            border: 2px solid #000;
-            padding: 25px;
-            box-shadow: 3px 12px 13px 3px rgba(0,0,0,0.3);
-        }
-        .text-shadow{
-            text-shadow: 2px 2px 4px rgb(153, 0, 255);
-            outline: 3px dotted rgb(255, 0, 255);
+        nav ul li{
+            list-style: devanagari;
+            list-style-type: "✅";
+            background-color: lightseagreen;
+            list-style-position: inside;
+            margin: 5px;
+            border : 2px solid black;
+            /* list-style-image: url("https://www.w3schools.com/cssref/smiley.gif"); */
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        This is a box with shadow and outline.
-    </div>
-    <p class="text-shadow">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore at error laudantium a incidunt quasi est ipsum accusantium atque minus optio enim eius illo maxime, quia quibusdam molestias porro ut vel modi architecto nihil cumque. Nihil, soluta.
-    </p>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Cntact</li>
+            <li>About</li>
+        </ul>
+    </nav>
 </body>
 </html>
