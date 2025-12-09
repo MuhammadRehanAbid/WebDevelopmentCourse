@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: lightgreen;
+            }
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
 </head>
+
 <body>
+    <div>
+        this is me writing something 
+    </div>
+    <div class="box boxes"></div>
+    <div class="box boxes"></div>
+    <div class="box boxes"></div>
     <!-- For Responsiveness -->
 </body>
+
 </html>
