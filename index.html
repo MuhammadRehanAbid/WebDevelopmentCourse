@@ -3,46 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Variables</title>
-    <style>
-        :root{
-            --color : aqua;
-            --seccolor:rgb(136, 232, 232);
-            --defpad:26px;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .nav{
-            background-color: var(--color);
-        }
-        .container{
-            background-color: var(--seccolor);
-        }
-        ul{
-            display: flex;
-        }
-        ul li{
-            list-style: none;
-            padding: var(--defpad);
-        }
-        ul li:first-child{
-            --color:purple;
-            background-color: var(--color,pink);
-        }
-    </style>
+    <title>Media Query</title>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-    <div class="container">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto eveniet ipsam et molestias necessitatibus vero cum magni aliquam eligendi porro perferendis, doloremque consectetur dolor quidem dolorem similique nostrum, quae velit autem. Assumenda repellat dolorum quos et nihil autem eaque molestiae quam natus, non earum.
-    </div>
+    <!-- For Responsiveness -->
 </body>
 </html>
