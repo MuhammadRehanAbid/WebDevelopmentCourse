@@ -4,45 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-
+    <title>CSS Selectors</title>
     <style>
-        body {
-            background-color: lightblue;
+        ::selection {
+            background-color: black;
+            color: rgb(164, 18, 209);
         }
 
-        @media only screen and (max-width: 455px) {
-            body {
-                background-color: lightgreen;
-            }
-            .boxes {
-                flex-direction: column;
-            }
+        .boxes::before {
+            content: "Before";
+            color: red;
         }
 
-        .boxes {
-            display: flex;
-            flex-direction: row;
+        .boxes::after {
+            content: "After";
+            color: blue;
+            border: 3px solid black;
         }
 
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: coral;
-            margin: 3px;
-            padding: 3px;
+        .box:nth-child(1) {
+            background-color: aqua;
+        }
+
+        .box:nth-last-child(1) {
+            background-color: lightgreen;
+        }
+
+        .box:nth-child(even) {
+            border: 2px solid rgb(220, 15, 158);
+        }
+
+        .box::first-letter {
+            font-size: 200%;
+            color: orange;
+        }
+
+        .box:nth-child(3)::first-line {
+            color: orange;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        this is me writing something 
+    <div class="boxes">
+        <div class="box">This is a Box</div>
+        <div class="box">This is a Box</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cupiditate blanditiis? Pariatur
+            sit rerum ab modi magni dolores aliquid consequuntur accusamus blanditiis corrupti porro quis eaque
+            reiciendis veniam id doloribus sed, provident quae, sapiente distinctio! Consequatur omnis at blanditiis ad
+            vitae. Numquam, laudantium? Temporibus corporis ut omnis, quasi harum fugit, architecto iste autem nisi, eos
+            cumque obcaecati sint consectetur iusto ad molestias blanditiis possimus. Quas, quia sunt? Asperiores sunt
+            earum, incidunt repellat eius ipsam atque similique rerum exercitationem recusandae, id culpa numquam ea
+            fugit vitae sint provident. Iure illo neque quo, veniam, quaerat optio cupiditate ipsam non ea eos ducimus
+            eligendi. Saepe quod architecto dignissimos cum fugit hic ad maiores quibusdam. Vel recusandae consequatur
+            eos repudiandae beatae officia obcaecati aliquid!</div>
+        <div class="box">This is a Box</div>
     </div>
-    <div class="box boxes"></div>
-    <div class="box boxes"></div>
-    <div class="box boxes"></div>
-    <!-- For Responsiveness -->
 </body>
 
 </html>
