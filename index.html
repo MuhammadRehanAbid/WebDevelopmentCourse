@@ -4,62 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+    <title>Exercise 4</title>
     <style>
-        ::selection {
-            background-color: black;
-            color: rgb(164, 18, 209);
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .boxes::before {
-            content: "Before";
-            color: red;
+        :root {
+            --main-color: #dd00ff;
+            --secondary-color: #ca80e5;
+            --text-color: rgb(0, 0, 0);
+        /* :root {
+            --main-color: #2b20c9;
+            --secondary-color: #eb0c0c;
+            --text-color: rgb(251, 255, 31); */
+        /* :root {
+            --main-color: #13cedb;
+            --secondary-color: #7fccde;
+            --text-color: #1e00ffe1; */
         }
 
-        .boxes::after {
-            content: "After";
-            color: blue;
-            border: 3px solid black;
+        ul li {
+            list-style-type: none;
+            display: inline;
+            padding: 30px;
+            font-size: 20px;
         }
 
-        .box:nth-child(1) {
-            background-color: aqua;
+        body {
+            background-color: var(--main-color);
         }
 
-        .box:nth-last-child(1) {
-            background-color: lightgreen;
+        nav {
+            background-color: var(--secondary-color);
+            padding: 12px 0;
         }
 
-        .box:nth-child(even) {
-            border: 2px solid rgb(220, 15, 158);
-        }
-
-        .box::first-letter {
-            font-size: 200%;
-            color: orange;
-        }
-
-        .box:nth-child(3)::first-line {
-            color: orange;
+        li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-family: 'Bebas Neue', cursive;
         }
     </style>
 </head>
 
 <body>
-    <div class="boxes">
-        <div class="box">This is a Box</div>
-        <div class="box">This is a Box</div>
-        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cupiditate blanditiis? Pariatur
-            sit rerum ab modi magni dolores aliquid consequuntur accusamus blanditiis corrupti porro quis eaque
-            reiciendis veniam id doloribus sed, provident quae, sapiente distinctio! Consequatur omnis at blanditiis ad
-            vitae. Numquam, laudantium? Temporibus corporis ut omnis, quasi harum fugit, architecto iste autem nisi, eos
-            cumque obcaecati sint consectetur iusto ad molestias blanditiis possimus. Quas, quia sunt? Asperiores sunt
-            earum, incidunt repellat eius ipsam atque similique rerum exercitationem recusandae, id culpa numquam ea
-            fugit vitae sint provident. Iure illo neque quo, veniam, quaerat optio cupiditate ipsam non ea eos ducimus
-            eligendi. Saepe quod architecto dignissimos cum fugit hic ad maiores quibusdam. Vel recusandae consequatur
-            eos repudiandae beatae officia obcaecati aliquid!</div>
-        <div class="box">This is a Box</div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
