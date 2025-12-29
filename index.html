@@ -4,110 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 5 from Harry</title>
+    <title>Exercise 6 from Harry</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        div {
+            border: 2px solid black;
+            border-radius: 6px;
+            height: 8vh;
+            background-color: beige;
+            display: flex;
+
         }
 
-        ul li {
-            list-style-type: none;
-            display: inline;
-            padding: 2px;
-            margin: 4px;
-            align-items: center;
+        nav {
+
+            display: flex;
+        }
+
+        img {
             margin-left: 25px;
-            font-weight: bold;
+            margin-top: 11px;
         }
 
         ul {
             display: flex;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: rgb(223, 223, 28);
-            height: 28px;
-        }
-
-        body {
-            background-color: black;
-        }
-
-        .box {
-            width: 100px;
-            height: 100px;
-            border: 2px solid red;
-            padding: 200px;
-            margin: 25px;
-            color: red;
-            text-align: center;
-            line-height: 100px;
-            display: inline-block;
-            background-color: rgb(255, 255, 0);
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .box3 {
-            color: red;
-            border: 2px solid red;
-            border-radius: 140px;
-            margin: 25px;
-            font-size: 38px;
-            text-align: center;
-            padding-top: 80px;
-            padding-bottom: 80px;
-            background-color: rgb(255, 255, 0);
-        }
-
-        footer {
-            text-align: center;
-            color: red;
-            border: 2px solid red;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            margin-top: 20px;
-            background-color: rgb(255, 255, 0);
-        }
-
-        .imglogo {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-
+            list-style: none;
+            gap: 18px;
+            margin-left: 300px;
         }
     </style>
 </head>
 
 <body>
-    <nav>
+    <div>
+        <img src="Screenshot 2025-12-29 175759.png" alt="Logo and text" width="90px">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>Products</li>
+            <li>Buy</li>
+            <li>Support</li>
+            <li>Learn</li>
+            <li>Company</li>
         </ul>
-    </nav>
-    <div class="container">
-        <div class="box">1st Div</div>
-        <div class="box box2">2nd Div</div>
     </div>
-    <div class="box3">
-        This is a sample text to demonstrate the layout of the page.
-    </div>
-    <div class="imglogo">
-        <img src="data:image/png;base64,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"
-            alt="Logo Image" style="width: 70px; height: 70px; border-radius: 50%;">
-    </div>
-    <footer>
-        this is the footer section of the page
-    </footer>
 </body>
 
 </html>
