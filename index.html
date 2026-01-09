@@ -1,127 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 7</title>
+    <title>Animations</title>
     <style>
-        .container {
-            background-color: rgb(188, 224, 255);
-            max-width: 80vw;
-            margin: 50px auto;
-            padding: 20px;
-            display: grid;
-            height: 100vh;
-            gap: 20px;
-            grid-template-columns: repeat(3,1fr);
-            
-
-
+        .container{
+            background-color: beige;
+            width: 90vw;
+            height: 70vh;
         }
+        .box{
+            background-color: aqua;
+             width: 100px;
+             height: 100px;
+             border-radius: 20%;
+             text-align: center;
+             align-content: center;
+             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+             animation: yo1 2s ease-in-out 2s infinite both,
+                        yo2 2s ease-in-out 2s infinite both;
+                        /* yo3 2s ease-in-out 1s infinite both;; */
+        }
+        @keyframes yo1{
+            from{
 
-        @media(max-width:1099px) {
-            .container {
-                grid-template-columns: 1fr
+            }
+            to{
+                transform: translate(500px,300px) rotate(720deg);
+                
             }
         }
-
-        .box {
-            border: 2px solid black;
-            text-align: center;
-            padding: 30px 20px;
-            width: 275px;
-            height: 100px;
-            border-radius: 35px;
-            background-color: rgb(248, 230, 255);
+        @keyframes yo2{
+            from{
+                background-color: blue;
+                text-decoration: none;
+            }
+            to{
+                background-color: blueviolet;
+                text-decoration: underline;
+            }
         }
-        .box h3{
-            font-size: medium ;
-            font-weight: bold;
-        }
-        .box p{
-            font-size: smaller;
-        }
-        .button{
-            display: flex;
-            gap: 10px;
-
-        }
-        .btn{
-            border: 2px solid black;
-            padding: 8px;
-            color:white;
-            border-radius: 15px;
-        }
-        .blue-btn{
-            background-color: blue;
-        }
-        .green-btn{
-            background-color: rgb(44, 194, 44);
-        }
+        /* @keyframes yo3{
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(40deg);
+            }
+            40%{
+                transform: rotate(80deg);
+            }
+            60%{
+                transform: rotate(120deg);
+            }
+            80%{
+                transform: rotate(160deg);
+            }
+            100%{
+                transform: rotate(200deg);
+            }
+        } */
         
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="box">
-            <h3>English</h3>
-            <p>English</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Deutsch</h3>
-            <p>German</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Italiano</h3>
-            <p>Italian</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Espanol</h3>
-            <p>Spanish</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Francais</h3>
-            <p>French</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Portogues</h3>
-            <p>Brazilian</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
-        </div>
-        <div class="box">
-            <h3>Urdu</h3>
-            <p>Urdu</p>
-            <div class="button">
-                <a href="" class="btn blue-btn">Download 32 bit</a>
-                <a href="" class="btn green-btn">Download 64 bit</a>
-            </div>
+            BOX
         </div>
     </div>
 </body>
-
 </html>
