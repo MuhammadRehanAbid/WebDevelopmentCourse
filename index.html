@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations</title>
+    <title>Exercise 8 from Harry</title>
     <style>
-        .container{
-            background-color: beige;
-            width: 90vw;
-            height: 70vh;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        .box{
-            background-color: aqua;
-             width: 100px;
-             height: 100px;
-             border-radius: 20%;
-             text-align: center;
-             align-content: center;
-             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-             animation: yo1 2s ease-in-out 2s infinite both,
-                        yo2 2s ease-in-out 2s infinite both;
-                        /* yo3 2s ease-in-out 1s infinite both;; */
-        }
-        @keyframes yo1{
-            from{
 
-            }
-            to{
-                transform: translate(500px,300px) rotate(720deg);
+        .con {
+            position: relative;
+            background-color: blue;
+            height: 70vh;
+            width: 80vw;
+        }
+
+        .ball {
+            background-color: red;
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 360px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: mov 5s cubic-bezier(0, 0, 0, 0.24) 1s infinite;
+            
+        }
+
+        @keyframes mov {
+            0% {
                 
+                 transform: translate(0px,0px);
             }
-        }
-        @keyframes yo2{
-            from{
-                background-color: blue;
-                text-decoration: none;
-            }
-            to{
-                background-color: blueviolet;
-                text-decoration: underline;
-            }
-        }
-        /* @keyframes yo3{
-            0%{
-                transform: rotate(0deg);
+
+            10% {
+               
+                 transform: translate(40px,-250px);
             }
             20%{
-                transform: rotate(40deg);
+                
+                 transform: translate(80px,0px);
             }
-            40%{
-                transform: rotate(80deg);
+            30% {
+              
+                 transform: translate(120px,-250px);
             }
-            60%{
-                transform: rotate(120deg);
+
+            40% {
+                
+                 transform: translate(160px,0px);
+            }
+            50%{
+                
+                 transform: translate(200px,-250px);
+            }
+            60% {
+                
+                 transform: translate(240px,0px);
+            }
+
+            70% {
+                
+                 transform: translate(280px,-250px);
             }
             80%{
-                transform: rotate(160deg);
+                
+                 transform: translate(320px,0px);
+            }
+             90% {
+                
+                 transform: translate(360px,-250px);
             }
             100%{
-                transform: rotate(200deg);
+               
+                 transform: translate(400px,0px);
             }
-        } */
-        
+        }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            BOX
+    </body>
+    <div class="con">
+        <div class="ball">
+
         </div>
     </div>
-</body>
+
 </html>
