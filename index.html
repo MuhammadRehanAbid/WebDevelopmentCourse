@@ -1,91 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 8 from Harry</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Object Fit</title>
+     <style>
+          .con{
+               width: 15vw;
+               height: 30vh;
+               border: 2px solid black;
+               background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_OlHEe2L-0VtexCxjIV5tc0dLor3wd57Yg&s");
+               background-position: -74px -2px;
+               background-repeat: repeat-y;
 
-        .con {
-            position: relative;
-            background-color: blue;
-            height: 70vh;
-            width: 80vw;
-        }
+          }
+          img{
+               width: 15vw;
+               height: 30vh;
+               /* object-fit: contain; */
+               /* object-position: top right; */
+          }
 
-        .ball {
-            background-color: red;
-            height: 90px;
-            width: 90px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            border-radius: 360px;
-            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            animation: mov 5s cubic-bezier(0, 0, 0, 0.24) 1s infinite;
-            
-        }
-
-        @keyframes mov {
-            0% {
-                
-                 transform: translate(0px,0px);
-            }
-
-            10% {
-               
-                 transform: translate(40px,-250px);
-            }
-            20%{
-                
-                 transform: translate(80px,0px);
-            }
-            30% {
-              
-                 transform: translate(120px,-250px);
-            }
-
-            40% {
-                
-                 transform: translate(160px,0px);
-            }
-            50%{
-                
-                 transform: translate(200px,-250px);
-            }
-            60% {
-                
-                 transform: translate(240px,0px);
-            }
-
-            70% {
-                
-                 transform: translate(280px,-250px);
-            }
-            80%{
-                
-                 transform: translate(320px,0px);
-            }
-             90% {
-                
-                 transform: translate(360px,-250px);
-            }
-            100%{
-               
-                 transform: translate(400px,0px);
-            }
-        }
-    </style>
-    </body>
-    <div class="con">
-        <div class="ball">
-
-        </div>
-    </div>
-
+     </style>
+</head>
+<body>
+     <div class="con">
+          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_OlHEe2L-0VtexCxjIV5tc0dLor3wd57Yg&s" alt=""> -->
+     </div>
+</body>
 </html>
